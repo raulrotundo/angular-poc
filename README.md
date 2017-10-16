@@ -2,6 +2,11 @@
 
 This POC (Proof of concept) is intended to be use as base or demo for big projects with Angular.
 
+Demo: [https://angular-app-poc.herokuapp.com](https://angular-app-poc.herokuapp.com)
+
+User: spiderman
+Password: 1234
+
 ### What's included?
 * [NPM](https://www.npmjs.com/) for package manager.
 * [TypeScript](http://www.typescriptlang.org/) for the base language.
