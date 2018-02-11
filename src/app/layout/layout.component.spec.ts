@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
-import { HttpModule, Http } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderComponent, SidebarComponent } from '../shared';
 import { LayoutComponent } from './layout.component';
@@ -15,7 +15,7 @@ describe('LayoutComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             imports: [
-                HttpModule,
+                HttpClientModule,
                 RouterTestingModule,
                 NgbDropdownModule.forRoot(),
                 TranslateModule.forRoot(),
