@@ -5,5 +5,6 @@
 
 export const environment = {
     production: false,
-    mockBackend: true
+    mockBackend: false,
+    apiEndpoint: 'https://nodejs-server-poc.herokuapp.com/'
 };
