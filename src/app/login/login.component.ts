@@ -41,11 +41,12 @@ export class LoginComponent implements OnInit {
         this.authenticationService.login(this.loginForm.controls)
             .subscribe(
             (data) => {
+                localStorage.setItem('currentUser', JSON.stringify(data));
                 localStorage.setItem('isLoggedin', 'true');
                 this.router.navigate([this.returnUrl]);
             },
             error => {
-                this.alertService.error(error);
+                this.alertService.error(error.error.errors.msg);
                 this.loading = false;
             });
     }
